@@ -1,0 +1,58 @@
+/* font for the whole page */
+* {
+	font-family: "Roboto", "Open Sans";
+	/* background-color: rgb(27, 26, 26); */
+	/* color: white; */
+}
+
+h2 {
+	color: lawngreen;
+}
+
+/* stuff for grouping the books and shows elements */
+* {
+	/* box-sizing: border-box; */
+}
+
+img {
+	max-width: 50%;
+}
+figure figcaption {
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+}
+
+/* clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	/* display: table; */
+}
+
+#profpicture {
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 2px solid blue;
+}
+
+.col2 {
+	border: 2px solid red;
+	width: 300px;
+	height: 300px;
+}
+
+.col1 {
+	border: 2px solid red;
+	width: 300px;
+	height: 300px;
+}

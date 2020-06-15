@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Developer Study Guide</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- google fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:wght@300;400;500&display=swap"
+		rel="stylesheet">
+	<!-- my css -->
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<nav class="navbar navbar-expand navbar-light" style="background-color: #cfcfcf;">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#pagetitle">Description<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<body>
+	<div class="container-fluid mycontainer">
+		<!-- needs to be container fluid to wrap all the way to the edges! -->
+		<div class="row py-3">
+			<div class="col-2 order-0 d-none d-lg-block" id="sticky-sidebar">
+				<div class="sticky-top">
+					<div class="sidebarwrapper">
+						<ol>
+							<li><a href="#html">HTML</a></li>
+							<li><a href="#CSS">CSS Properties</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!-- MAIN CONTENT -->
+			<div class="col" id="main">
+				<!-- title -->
+				<h1 class="pagetitle" id="pagetitle">Web Developer <br> Study Guide</h1>
+
+				<!-- project description -->
+				<div id="description">
+					<!-- @ the bottom of the guide, use a table to separate contact info like that html5 template you used way back when  -->
+					<p>Here is my attempt at a CodeAcademy HTML/CSS Cheatsheet, written for myself, and others,
+						as a
+						reference
+						throughout their journey towards a career in Web Development.</p>
+					<p>In order to learn to code, one must <i>actually</i> code. I kept pushing back taking on a
+						challenge
+						project for the sake of speeding through the CodeAcademy lesson plan. At some point,
+						however, I
+						felt the
+						need to practice what I'd been learning instead of completing fill-in-the-blank coding
+						exercises.</p>
+					<p>I may add more features, sections and explanations to this page as time goes on, in the
+						hopes
+						of
+						keeping
+						everything in a central place moving forward.</p>
+				</div>
+
+				<br>
+				<!-- HTML chapter -->
+				<h2><span id=html class="chapterheading">HTML</span></h2>
+
+				<!-- HTMLtags sub chapter -->
+				<div class="tags">
+					<h3 class="subheading">Tags</h3>
+					<p>Surrounding text with <code>&lt;h1&gt;</code> tags will designate text to be rendered as
+						large
+						headings
+						on standard webpages.</p>
+					
+					<p><code>&lt;h2&gt;</code> tags will do the same thing except smaller ie, sub headings and
+						sub
+						headers.</p>
+
+					<div class="examples">
+						<p>Here are some examples of heading tags in use and their respective sizes:</p>
+						<div id="headingexamples">
+							<p>
+								<h1 class="exampleitems">Example H1</h1>
+							</p>
+							<p>
+								<h2 class="exampleitems">Example H2</h2>
+							</p>
+							<p>
+								<h3 class="exampleitems">Example H3</h3>
+							</p>
+							<p>
+								<h4 class="exampleitems">Example H4</h4>
+							</p>
+							<p>
+								<h5 class="exampleitems">Example H5</h5>
+							</p>
+							<p>
+								<h6 class="exampleitems">Example H6</h6>
+							</p>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<!-- CSS chapter -->
+				<h2><span id=CSS class="chapterheading">CSS Properties</span></h2>
+				<!-- CSS boxes sub chapter -->
+				<div class="boxes">
+					<h3 class="subheading">Box Properties</h3>
+
+					<!-- <h3>tables</h3>
+			<h3>Lists</h3>
+			<h2>CSS Properties</h2>
+			<h3>The Box Content Model</h3>
+			<h3>Box Positioning</h3>
+			<h3>Flex Sizing</h3>
+			<h3>Media Queries</h3>
+			<h3>Site responsiveness</h3>
+			<h3>Color</h3>
+				<h4>RGB Alpha</h4> -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- contact table/info -->
+	<div id="contact">
+	</div>
+	<!-- <footer>
+		fixed footer/contact info and links to github, linkedin 
+		also footer should be hidden underneath the top of the page and then when you scroll down, should sticky to the bottom of the page as it scrolls,that way, there isn't redundant contact info at the beginning
+		
+	footer should blend seamlessly into the bottom of the contact info section 
+
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> 
+		<ul>
+			<li><a href="github.com/micriver" target="_blank">GitHub</a></li>
+			<li><a href="https://www.linkedin.com/in/michael-rivera-a42391112" target="_blank">LinkedIn</a></li>
+		</ul>
+	</footer> -->
+</body>
+
+</html>

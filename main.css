@@ -1,0 +1,151 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+/* [ element, element ] - will select BOTH elements, good for when your page has similar styles across multiple elements EG when your paragraph and header elements are the same color */
+h1, h2 {
+	font-family: "Playfair Display";
+	font-weight: 700;
+}
+
+.pagetitle {
+	font-size: 5em;
+	margin: 0;
+	margin-bottom: 20px;
+	line-height: .9em;
+}
+
+/* main site */
+
+/* nav bar stuff */
+nav {
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+	/* margin-bottom: 20px; */
+	/* you need this position property to use the top property */
+	position: relative;
+	width: 100%;
+	border-bottom-style: outset;
+	border-width: 1.2px;
+}
+
+/* in order to target the listed items inside the nav bar, you have to write the parent, then the child */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+  
+nav li {
+	float: left;
+}
+  
+nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+}
+
+.navbar {
+	/* margin: 0px; */
+}
+
+/* sidenavbar stuff */
+#sticky-sidebar{
+	/* border: 5px solid red; */
+	margin-top: -17px;
+	margin-bottom: -17px;
+	border-right-style: outset;
+	border-width: 1.2px;
+	/* background-color: rgb(207, 207, 207); */
+}
+
+.row {
+	/* padding: 0; */
+	/* border: 2px solid red; */
+}
+
+.sidebarwrapper {
+	/* border: 2px solid red; */
+	padding: 30px 20px 400px 5px;
+	overflow-wrap: break-word;
+}
+/* 
+.sticky-top {
+	padding: 30px 10px;
+	top: 85px;
+	border: 2px solid red;
+	box-shadow: 0px 20px 30px -13px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	background-color: rgb(207, 207, 207);
+	border-style: outset;
+	border-width: 1.2px;
+	width: 100%;
+} */
+
+a:link {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+
+/* main content stuff */
+#description {
+	font-size: 15px;
+}
+
+/* vvvvvv restrict border to width of text vvvvvv */
+/* Chapter text borders */
+h2 span {
+	position: relative;
+	padding-bottom: 2px;
+}
+
+h2 span::after {
+	position: absolute;
+	width: 100%;
+	left: 0; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 1px; 
+	border-bottom: 2px dotted rgb(143, 141, 255);
+    content: ""
+}
+/* ^^^^^^ restrict border to width of text ^^^^^^ */
+
+/* background look anytime you write code on the page */
+code {
+	background-color: rgba(38, 125, 255, 0.164);
+	border: 1px dotted rgb(143, 141, 255);
+	color: black;
+	padding: 2px 4px;
+	font-size: .9em;
+}
+
+
+/* HTML Examples of headings */
+#headingexamples {
+	background-color: rgba(38, 125, 255, 0.164);
+	border: 1px dotted rgb(143, 141, 255);
+	width: 300px;
+	padding: 0 20px;
+}
+
+.exampleitems {
+	font-family: "Roboto";
+}
+
+.chapterheading {
+	color: black;
+	font-size: 3rem;
+}
+
+.subheading {
+	font-size: 1.5rem;
+	margin: 20px 0px 10px 0px;
+}
