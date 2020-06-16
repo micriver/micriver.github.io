@@ -94,3 +94,32 @@ a:active {
 	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
 	margin-right: auto;
 }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	html, body {
+		width: auto;
+		margin: 0;
+	}
+	.wrapper {
+		/* width: 200px; */
+	}
+	#bio_row {
+		width: 200px;
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+	p {
+		font-size: 1.3em;
+	}
+	#icons_row {
+		text-align: left;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 240px;
+		margin-bottom: 20px;
+	}
+}
