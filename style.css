@@ -1,4 +1,8 @@
 
+body {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -53,7 +57,7 @@ a:active {
 }
 
 .right_col {
-	background-color: rgb(87, 85, 110);
+	background-color: rgb(64, 127, 243);
 }
 
 #portrait {
@@ -64,9 +68,25 @@ a:active {
 
 #icons_row {
 	text-align: center;
+	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
+	margin-right: auto;
+}
+
+.book_list {
+	text-align: center;
+	margin: 30px;
 }
 
 #iphones_row {
+	/* Grid styles */
+	/* display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); */
+  /* grid-template-rows: repeat(6, 200px); */
+  /* grid-gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
+
 	margin-top: 25px;
 	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
 	margin-right: auto;
