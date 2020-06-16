@@ -1,15 +1,28 @@
 
-body {
-	font-family: "Roboto", Arial, Helvetica, sans-serif;
+html, body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(121, 121, 121);
+	color: rgb(39, 39, 39);
 }
 
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	/* gap: 1px 1px; */
-	grid-template-areas: ". .";
+h1 {
+	 font-size: 4rem;
+	 font-weight: 500;
+	 margin: auto 0px;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 10px auto;
+}
+
+p {
+	margin: 0;
+}
+
+hr {
+	border: 1px solid rgb(73, 73, 73);
 }
 
 /* SOCIAL ICONS */
@@ -32,10 +45,6 @@ body {
 	height: auto;
 }
 
-.iphone {
-	/* box-shadow:20px 20px 50px grey; */
-}
-
 /* LINKS */
 a:link {
 	color: rgb(39, 39, 39);
@@ -56,19 +65,22 @@ a:active {
 	text-decoration: none;
 }
 
-.right_col {
+/* .wrapper {
 	background-color: rgb(64, 127, 243);
-}
+} */
 
-#portrait {
-	max-width: 100%;
-	height: auto;
+#bio_row {
+	text-align: left;
+	padding: 235px;
+	padding-bottom: 0px;
+	padding-top: 100px;
 }
 
 #icons_row {
-	text-align: center;
-	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
-	margin-right: auto;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 235px; /* https://www.lifewire.com/center-images-with-css-3466389 */
+	margin-right: 240px;
 }
 
 .book_list {
@@ -81,11 +93,4 @@ a:active {
 	margin-top: 25px;
 	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
 	margin-right: auto;
-}
-
-#bio_row {
-	text-align: center;
-	padding: 100px;
-	padding-bottom: 0px;
-	padding-top: 100px;
 }
