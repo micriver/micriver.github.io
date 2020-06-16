@@ -1,3 +1,38 @@
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	/* gap: 1px 1px; */
+	grid-template-areas: ". .";
+}
+
+/* SOCIAL ICONS */
+.github_icon  {
+	margin: 0px 10px;
+}
+
+.linkedin_icon {
+	margin: 0px 10px;
+}
+
+/* RECENT PROJECTS */
+.row {
+	/* display: inline; */
+	display: table;
+}
+
+.iphone1, .iphone2, .iphone3 {
+	width: 200px;
+	height: auto;
+}
+
+.iphone {
+	/* box-shadow:20px 20px 50px grey; */
+}
+
+/* LINKS */
 a:link {
 	color: rgb(39, 39, 39);
 	text-decoration: none;
@@ -17,21 +52,8 @@ a:active {
 	text-decoration: none;
 }
 
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	/* gap: 1px 1px; */
-	grid-template-areas: ". .";
-}
-
-.github_icon  {
-	margin: 10px;
-}
-
-.linkedin_icon {
-	margin: 10px;
+.right_col {
+	background-color: rgb(17, 0, 255);
 }
 
 #portrait {
@@ -40,9 +62,21 @@ a:active {
 	height: auto;
 }
 
-#bio {
+#icons_row {
 	text-align: center;
-	background-color: rgb(17, 0, 255);
+}
+
+#iphones_row {
+	margin-top: 25px;
+	margin-left: auto; /* https://www.lifewire.com/center-images-with-css-3466389 */
+	margin-right: auto;
+}
+
+
+
+#bio_row {
+	text-align: center;
 	padding: 100px;
-	padding-top: 250px;
+	padding-bottom: 0px;
+	padding-top: 100px;
 }
