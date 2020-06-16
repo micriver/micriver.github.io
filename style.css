@@ -108,9 +108,13 @@ a:active {
 		/* width: 200px; */
 	}
 	#bio_row {
-		width: 200px;
+		width: 350px;
 		padding: 30px;
 		padding-bottom: 0px;
+	}
+	hr {
+		width: 200px;
+		margin-bottom: 25px;
 	}
 	p {
 		font-size: 1.3em;
@@ -121,5 +125,44 @@ a:active {
 		margin-left: 25px;
 		margin-right: 240px;
 		margin-bottom: 20px;
+	}
+}
+
+/* Galaxy S6, S7, S7 Edge */
+@media only screen
+	and (min-device-width: 360px)
+	and (max-device-width: 640px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+	/* CSS Rules Here */
+	html, body {
+		width: auto;
+		margin: 0;
+	}
+	.wrapper {
+		/* width: 200px; */
+	}
+	#bio_row {
+		width: 300px;
+		padding: 20px;
+		padding-bottom: 0px;
+		padding-top: 15px;
+	}
+	h4 {
+		margin-bottom: 0px;
+	}
+	hr {
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 1.3em;
+	}
+	#icons_row {
+		text-align: left;
+		margin-top: 15px;
+		margin-left: 20px;
+		margin-right: 240px;
+		margin-bottom: 10px;
 	}
 }
