@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike | Dev</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./resources/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!-- my style sheet -->
+    <!-- for github, you need the relative path and the "type" attribute 
+	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
+	-->
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- 
+		nav bar from here: 
+		https://bootstrapcreative.com/pattern/navbar-centered-logo-links-left-right/ 
+	-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-lg-none" href="#">Guides</a>
+
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggle"
+        aria-controls="navbarToggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarToggle"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Guides</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+        </ul>
+        <!--   Show this only lg screens and up   -->
+        <!-- <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a> -->
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul> -->
+      </div>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/michael-rivera-a42391112/"
+        ><i
+          class="fa fa-linkedin fa-2x linkedin_icon"
+          aria-hidden="true"
+        ></i
+      ></a>
+      <a target="_blank" href="http://github.com/micriver"
+        ><i class="fa fa-github fa-2x github_icon" aria-hidden="true"></i
+      ></a>
+    </nav>
+    <div id="main" class="container">
+      <div class="container container-1">
+        <div class="row">
+          <h1>Michael Rivera</h1>
+          <p>
+            I'm interested in building Bitcoin on-ramp infrastructure, working
+            on second layer technologies for the Bitcoin Protocol and educating
+            people on protecting their privacy online. I love to read and go
+            running in my spare time.
+          </p>
+        </div>
+      </div>
+      <div class="container container-2">
+        <div class="row justify-content-around">
+          <div class="col-sm-1 col-lg-3">
+            <div class="card">
+              <img
+                src="./resources/images/example_headshot.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 col-lg-3">
+            <div class="card">
+              <img
+                src="./resources/images/example_headshot.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 col-lg-3">
+            <div class="card">
+              <img
+                src="./resources/images/example_headshot.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="book_list">
+				<p><a href="">Books I'm reading: </a></p>
+			</div> -->
+
+    <!-- recent projects -->
+    <!-- <div id='iphones_row' class="row projects">
+			<h3>Recent Work</h3>
+			<img class='col1 iphone1 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+			<img class='col2 iphone2 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+			<img class='col3 iphone3 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+		</div> -->
+  </body>
+</html>

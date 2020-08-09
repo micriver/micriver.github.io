@@ -17,14 +17,6 @@ h4 {
 	margin: 10px auto;
 }
 
-p {
-	margin: 0;
-}
-
-hr {
-	border: 1px solid rgb(73, 73, 73);
-}
-
 /* SOCIAL ICONS */
 .github_icon  {
 	margin: 0px 10px;
@@ -34,30 +26,19 @@ hr {
 	margin: 0px 10px;
 }
 
-/* RECENT PROJECTS */
-.row {
-	/* display: inline; */
-	display: table;
-}
-
-.iphone1, .iphone2, .iphone3 {
-	width: 200px;
-	height: auto;
-}
-
 /* LINKS */
 a:link {
-	color: rgb(39, 39, 39);
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
   
 a:visited {
-	color: rgb(39, 39, 39);
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
   
 a:hover {
-	color: rgb(39, 39, 39);
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 }
   
@@ -95,6 +76,24 @@ a:active {
 	margin-right: auto;
 }
 
+#main {
+	/* border: 1px solid red; */
+	padding-top: 30px;
+}
+
+/* .container-1 {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.container {
+	/* border: 1px solid red; */
+	margin-top: 20px;
+}
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -103,9 +102,6 @@ a:active {
 	html, body {
 		width: auto;
 		margin: 0;
-	}
-	.wrapper {
-		/* width: 200px; */
 	}
 	#bio_row {
 		/* width: 350px; */
@@ -139,9 +135,6 @@ a:active {
 		width: auto;
 		margin: 0;
 	}
-	.wrapper {
-		/* width: 200px; */
-	}
 	#bio_row {
 		/* width: 300px; */
 		padding: 20px;
@@ -156,7 +149,7 @@ a:active {
 		margin-bottom: 10px;
 	}
 	p {
-		font-size: 1.3em;
+		font-size: 1.0em;
 	}
 	#icons_row {
 		text-align: left;
@@ -165,4 +158,16 @@ a:active {
 		margin-right: 150px;
 		margin-bottom: 10px;
 	}
+}
+
+@media only screen
+
+  and (min-device-width: 320px)
+
+  and (max-device-width: 568px)
+
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* CSS Rules Here */
+
 }
