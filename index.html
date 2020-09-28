@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mike | Dev</title>
-	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
-	<!-- font awesome -->
-	<link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!-- my style sheet -->
-	<!-- for github, you need the relative path and the "type" attribute 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike | Dev</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./resources/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!-- friconix -->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!-- my style sheet -->
+    <!-- for github, you need the relative path and the "type" attribute 
 	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
 	-->
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type='text/css' href="./style.css">
-</head>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- my stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
 
-<body>
-	<div class="wrapper">
-		<div id="bio_row">
-			<h1>Michael A. Rivera</h1>
-			<p>I'm interested in building Bitcoin on-ramp infrastructure, working on second layer technologies for the Bitcoin Protocol and educating people on protecting their privacy online. I love to read and go running in my spare time.</p>
-			<h4><a href="./guides.html">Guides</a></h4>
-			<h4><a href="">Books</a></h4>
-		</div>
-
-		<!-- ICONS -->
-		<div id="icons_row">
-		<hr>
-			<!-- <a href="./studyGuide.html">test link</a> -->
-			<a target="_blank" href="http://github.com/micriver"><i class="fa fa-github fa-4x github_icon"
-					aria-hidden="true"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/michael-rivera-a42391112/"><i
-					class="fa fa-linkedin-square fa-4x linkedin_icon" aria-hidden="true"></i></a>
-		</div>
-		<!-- <div class="book_list">
-				<p><a href="">Books I'm reading: </a></p>
-			</div> -->
-
-		<!-- recent projects -->
-		<!-- <div id='iphones_row' class="row projects">
-			<h3>Recent Work</h3>
-			<img class='col1 iphone1 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
-			<img class='col2 iphone2 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
-			<img class='col3 iphone3 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
-		</div> -->
-	</div>
-</body>
-
+  <body>
+    <div class="container-fluid mycontainer">
+      <!-- needs to be container fluid to wrap all the way to the edges! -->
+      <!-- sidebar -->
+      <div class="row myrow">
+        <div
+          class="col-xl-2 col-lg-3 order-0 d-none d-lg-block"
+          id="sticky-sidebar"
+        >
+          <div class="sticky-top">
+            <div class="sidebarwrapper py-5">
+              <img
+                class="img-fluid rounded mx-auto d-block"
+                style="width: 285px"
+                src="./Assets/images/profile/circular-profile-pic.png"
+              />
+              <ol>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#guides">GUIDES</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- MAIN CONTENT -->
+        <div class="col" id="main">
+          <div id="hero-name">
+            <p class="text-left">
+              <span id="comment">//&nbsp;</span>Michael Rivera
+            </p>
+          </div>
+          <div class="contact">
+            <p class="text-left">
+              <span id="email">mrivera.dir@gmail.com</span> | San francisco, ca
+              | (781) 608-7464
+            </p>
+          </div>
+          <div class="bio">
+            <p>
+              I’m a Blockchain Web developer. I build Ethereum Smart Contracts
+              and simple web applications.
+            </p>
+            <p>
+              I'm interested in cryptocurrency, industrial-blockchain
+              applications and decentralized internet infrastructures. <br />I’m
+              also a former food photographer, filmmaker and a hobbyist graphic
+              designer.
+            </p>
+          </div>
+          <div class="social-icons">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/michael-rivera-a42391112/"
+              ><i
+                style="color: black"
+                class="fa fa-linkedin fa-4x linkedin_icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a target="_blank" href="http://github.com/micriver"
+              ><i style="color: black" class="fa fa-github fa-4x github_icon" aria-hidden="true"></i
+            ></a>
+            <i style="color: black" class="fa fa-twitter fa-4x twitter_icon" aria-hidden="true"></i
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

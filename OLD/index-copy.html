@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <!-- bootstrap -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-<!-- google fonts -->
-<link
-	href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:wght@300;400;500&display=swap"
-	rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mike | Dev</title>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- my style sheet -->
+	<!-- for github, you need the relative path and the "type" attribute 
+	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
+	-->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type='text/css' href="./style.css">
 </head>
+
 <body>
-	<!-- <nav class="zone blue sticky">
-		<ul class="main-nav">
-			<li><a href="">About</a></li>
-			<li><a href="">Product</a></li>
-			<li><a href="">Our Team</a></li>
-			<li class="push"><a href="">Contacts</a></li>
-		</ul>
-	</nav> -->
-	<!-- <div class="container zone ">
-		<img class="cover" src="./resources/images/42_prof_cir.png" alt="">
-		<br>
-		<h1>Mike</h1>
-	</div> -->
-	<div class="card" style="width: 18rem;">
-		<img src="./resources/images/42_prof_cir.png" class="card-img-top" alt="...">
-		<div class="card-body">
-		  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	<div class="wrapper">
+		<div id="bio_row">
+			<h1>Michael A. Rivera</h1>
+			<p>I'm interested in building Bitcoin on-ramp infrastructure, working on second layer technologies for the Bitcoin Protocol and educating people on protecting their privacy online. I love to read and go running in my spare time.</p>
+			<h4><a href="./guides.html">Guides</a></h4>
+			<h4><a href="">Books</a></h4>
 		</div>
-	  </div>
-  <div class="zone blue grid-wrapper">
-		<div class="box zone"><img src="./img/files_2.png" alt="" ></div>
-		<div class="box zone"><img src="./img/server_2_2.png" alt="" ></div>
-		<div class="box zone"><img src="./img/monitor_settings_2.png" alt="" ></div>
-		<div class="box zone"><img src="./img/server_3.png" alt="" ></div>
-		<div class="box zone"><img src="./img/data_storage_2_2.png" alt="" ></div>
-		<div class="box zone"><img src="./img/monitor_coding_2.png" alt="" ></div>
-		<div class="box zone"><img src="./img/server_safe_2.png" alt="" ></div>
-  </div>
-  <footer class="zone blue">Footer</footer>
+
+		<!-- ICONS -->
+		<div id="icons_row">
+		<hr>
+			<!-- <a href="./studyGuide.html">test link</a> -->
+			<a target="_blank" href="http://github.com/micriver"><i class="fa fa-github fa-4x github_icon"
+					aria-hidden="true"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/michael-rivera-a42391112/"><i
+					class="fa fa-linkedin-square fa-4x linkedin_icon" aria-hidden="true"></i></a>
+		</div>
+		<!-- <div class="book_list">
+				<p><a href="">Books I'm reading: </a></p>
+			</div> -->
+
+		<!-- recent projects -->
+		<!-- <div id='iphones_row' class="row projects">
+			<h3>Recent Work</h3>
+			<img class='col1 iphone1 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+			<img class='col2 iphone2 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+			<img class='col3 iphone3 iphone' src="./resources/images/morty_dance.gif" alt="" srcset="">
+		</div> -->
+	</div>
 </body>
+
 </html>

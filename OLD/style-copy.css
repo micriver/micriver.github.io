@@ -1,167 +1,152 @@
-body {
-	/* chrome usually has some css rules already for html elements, this is how you zero it out */
-	margin: auto 0;
-	font-family: arial;
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 
-.card {
-	align-items: center;
-	justify-content: center;
+h1 {
+	 font-size: 4rem;
+	 font-weight: 500;
+	 margin: auto 0px;
 }
 
-.card-img-top {
-	width: 300px;
+h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 10px auto;
 }
 
-.card-img-top > img {
-	shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+/* SOCIAL ICONS */
+.github_icon  {
+	margin: 0px 10px;
 }
 
-.zone {
-    /* padding:30px 50px;
-    margin:40px 60px; */
-    cursor:pointer;
-    /* display:inline-block; */
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
+.linkedin_icon {
+	margin: 0px 10px;
 }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+/* LINKS */
+a:link {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
 }
-
-/* NAV */
-.sticky {
-	/* this is a common thing you'll see on a lot of sites */
-	position: fixed;
-	top: 0;
-	width: 100%;
+  
+a:visited {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
 }
-.main-nav {
-	/* activate flexbox */
-	display: flex;
-	list-style: none;
-	font-size: 0.7em;
-	margin: 0;
+  
+a:hover {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
 }
-
-/* as soon as this is LESS than 600px in width, apply these properties here */
-@media only screen and (max-width: 500px) {
-	.main-nav {
-		font-size: 0.5em;
-		padding: 0;
-	}
-}
-
-.push {
-	/* pushes contacts to the right */
-	margin-left: auto;
-}
-
-li {
-	padding: 20px;
-}
-
-a {
-	color: #f5f5f6;
+  
+a:active {
 	text-decoration: none;
 }
 
-/* COVER */
-.container {
-	/* flexbox allows us to align items very easily */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* viewportheight lets your element's height grow up and down with the size of the viewport */
-	height: 80vh;
+.nav-bar-transparency {
+	background-color: rgb(0, 0, 0);
 }
 
-.cover {
-	width: 30rem;
+.navbar-nav > li > a {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
 }
 
-/* GRID */
-.grid-wrapper {
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+/* https://www.w3schools.com/csS/css_padding.asp */
+#main {
+	padding: 30px 10% 0px 10%;
 }
 
-.container > img {
-	width: 80vh;
-}
-
-.box > img {
+/* .container-1 {
 	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.container {
+	/* border: 1px solid red; */
+	margin-top: 20px;
 }
 
-.box {
-	background-color: #444;
-	/* padding affects the width coverage above */
-	padding: 130px;
-	margin: 20px;
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	html, body {
+		width: auto;
+		margin: 0;
+	}
+	#bio_row {
+		/* width: 350px; */
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+	hr {
+		width: 200px;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 1.3em;
+	}
+	#icons_row {
+		text-align: left;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 200px;
+		margin-bottom: 20px;
+	}
 }
 
-footer {
-	text-align: center;
+/* Galaxy S6, S7, S7 Edge */
+@media only screen
+	and (min-device-width: 360px)
+	and (max-device-width: 640px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+	/* CSS Rules Here */
+	html, body {
+		width: auto;
+		margin: 0;
+	}
+	#bio_row {
+		/* width: 300px; */
+		padding: 20px;
+		padding-bottom: 0px;
+		padding-top: 15px;
+	}
+	h4 {
+		margin-bottom: 0px;
+	}
+	hr {
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 1.0em;
+	}
+	#icons_row {
+		text-align: left;
+		margin-top: 15px;
+		margin-left: 20px;
+		margin-right: 150px;
+		margin-bottom: 10px;
+	}
 }
 
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green{
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-}
+@media only screen
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red{
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
+  and (min-device-width: 320px)
 
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
+  and (max-device-width: 568px)
 
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* CSS Rules Here */
+
 }
