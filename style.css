@@ -1,125 +1,157 @@
-
-html, body {
-	/* font-family: 'Roboto', sans-serif; */
-	/* background-color: #2f00ff; */
-	height: 100%;
-	width: 100%;
+html,
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  /* background-color: #2f00ff; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #sticky-sidebar {
-	/* border: 2px red solid; */
-	background: #D3D3D3;
-	padding: 10% 0px;
-	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  /* border: 2px red solid; */
+  background: #d3d3d3;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-ol li{
-	list-style-type: none;
-	/* color:blue; */
-	margin: 15px 0px;
-	text-align: center;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.5rem;
-	color: rgba(255, 255, 255, 0.88);
+.sidebarwrapper {
+  padding-top: 275px;
+}
+
+h1 {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+ol li {
+  list-style-type: none;
+  /* color:blue; */
+  margin: 15px 0px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 ol {
-	padding: 0px;
+  padding: 0px;
 }
 
 #hero-name {
-	font-family: Roboto;
-	font-style: italic;
-	font-weight: 900;
-	font-size: 5rem;
-	text-transform: uppercase;
-	letter-spacing: 0.065em;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.065em;
 }
 
 #comment {
-	color: #0075FF;
-	font-size: 6rem;
-	font-style: bold;
+  color: #0075ff;
+  font-size: 6rem;
+  font-style: bold;
 }
 
 #hero-name p {
-	/* https://developer.mozilla.org/en-US/docs/Web/CSS/line-height */
-    margin: 0;
-	line-height: 0.9;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/line-height */
+  margin: 0;
+  line-height: 0.9;
 }
 
 .contact {
-	color: #C7C7C7;
-	text-transform: uppercase;
-	font-family: Roboto;
-	font-weight: 900;
-
+  color: #c7c7c7;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 900;
 }
 
 #email {
-	color: #0075FF;
-	font-family: Roboto;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-style: bold;
-	letter-spacing: 0.045em;
+  color: #0075ff;
+  font-family: Roboto;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: bold;
+  letter-spacing: 0.045em;
 }
 
 .bio {
-	font-family: Roboto;
-	font-weight: 400;
-	margin-top: 40px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-top: 40px;
 }
 .mycontainer {
-	/* border: 4px blue dotted; */
-	height: 100%;
+  /* border: 4px blue dotted; */
+  height: 100%;
 }
 
 .myrow {
-	/* border: 4px orange solid; */
-	height: 100%;
+  /* border: 4px orange solid; */
+  height: 100%;
 }
 
 #main {
-	padding: 16% 10% 0px 8%;
-	/* border: 2px green solid; */
+  padding: 20% 10% 90px 8%;
+  height: 100vh;
 }
 
 /* SOCIAL ICONS */
 .social-icons {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
-.github_icon  {
-	margin: 0px 10px;
+.github_icon {
+  margin: 0px 10px;
 }
 
 .linkedin_icon {
-	margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 .twitter_icon {
-	margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 /* LINKS */
 a:link {
-	color: rgb(255, 255, 255);
-	text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-  
+
 a:visited {
-	color: rgb(255, 255, 255);
-	text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-  
+
 a:hover {
-	color: rgb(255, 255, 255);
-	text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-  
+
 a:active {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+#portfolio {
+  height: 200vh;
+  background-color: #0075ff;
+  padding: 5% 10% 90px 8%;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+#portfolio img {
+  margin-top: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+#portfolio p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 1.2rem;
+  font-style: thin;
 }

@@ -32,69 +32,100 @@
   </head>
 
   <body>
-    <div class="container-fluid mycontainer">
+    <div class="container-fluid mycontainer px-0">
       <!-- needs to be container fluid to wrap all the way to the edges! -->
-      <!-- sidebar -->
-      <div class="row myrow">
+      <div class="row no-gutters myrow">
+        <!-- sidebar -->
         <div
           class="col-xl-2 col-lg-3 order-0 d-none d-lg-block"
           id="sticky-sidebar"
         >
           <div class="sticky-top">
-            <div class="sidebarwrapper py-5">
+            <div class="sidebarwrapper">
               <img
                 class="img-fluid rounded mx-auto d-block"
                 style="width: 285px"
                 src="./Assets/images/profile/circular-profile-pic.png"
               />
               <ol>
-                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#main">ABOUT</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#guides">GUIDES</a></li>
               </ol>
             </div>
           </div>
         </div>
-        <!-- MAIN CONTENT -->
-        <div class="col" id="main">
-          <div id="hero-name">
-            <p class="text-left">
-              <span id="comment">//&nbsp;</span>Michael Rivera
-            </p>
-          </div>
-          <div class="contact">
-            <p class="text-left">
-              <span id="email">mrivera.dir@gmail.com</span> | San francisco, ca
-              | (781) 608-7464
-            </p>
-          </div>
-          <div class="bio">
-            <p>
-              I’m a Blockchain Web developer. I build Ethereum Smart Contracts
-              and simple web applications.
-            </p>
-            <p>
-              I'm interested in cryptocurrency, industrial-blockchain
-              applications and decentralized internet infrastructures. <br />I’m
-              also a former food photographer, filmmaker and a hobbyist graphic
-              designer.
-            </p>
-          </div>
-          <div class="social-icons">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/michael-rivera-a42391112/"
-              ><i
-                style="color: black"
-                class="fa fa-linkedin fa-4x linkedin_icon"
-                aria-hidden="true"
-              ></i
-            ></a>
-            <a target="_blank" href="http://github.com/micriver"
-              ><i style="color: black" class="fa fa-github fa-4x github_icon" aria-hidden="true"></i
-            ></a>
-            <i style="color: black" class="fa fa-twitter fa-4x twitter_icon" aria-hidden="true"></i
-            >
+        <!-- MAIN COLUMN -->
+        <div class="col">
+          <div class="container-fluid px-0">
+            <!-- <div class="row-fluid">
+              <h1 class="test">test row</h1>
+            </div> -->
+            <div id="main">
+              <div id="hero-name">
+                <p class="text-left">
+                  <span id="comment">//&nbsp;</span>Michael Rivera
+                </p>
+              </div>
+              <div class="contact">
+                <p class="text-left">
+                  <span id="email">mrivera.dir@gmail.com</span> | San francisco,
+                  ca | (781) 608-7464
+                </p>
+              </div>
+              <!-- bio -->
+              <div class="bio">
+                <p>
+                  I’m a Blockchain Web developer. I build Ethereum Smart
+                  Contracts and simple web applications.
+                </p>
+                <p>
+                  I'm interested in cryptocurrency, industrial-blockchain
+                  applications and decentralized internet infrastructures.
+                  <br />I’m also a former food photographer, filmmaker and a
+                  hobbyist graphic designer.
+                </p>
+              </div>
+              <!-- social icons -->
+              <div class="social-icons">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/michael-rivera-a42391112/"
+                  ><i
+                    style="color: black"
+                    class="fa fa-linkedin fa-4x linkedin_icon"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <a target="_blank" href="http://github.com/micriver"
+                  ><i
+                    style="color: black"
+                    class="fa fa-github fa-4x github_icon"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <i
+                  style="color: black"
+                  class="fa fa-twitter fa-4x twitter_icon"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <!-- portfolio section -->
+            <div class="jumbotron jumbotron-fluid" id="portfolio">
+                <h1>Facial Recognition Application</h1>
+              <p>
+                A code-along tutorial creating a web application from scratch.
+                You can create a user, sign-in, and then submit photo url’s for
+                the AI to idenitify faces. <br>For now, it only does one face at a
+                time. Try it out here! Languages and Frameworks: HTML, CSS,
+                Javascript, ReactJs, NodeJs, and express.
+              </p>
+              <img src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png" alt="photo of application" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="project2">
+
+            </div>
           </div>
         </div>
       </div>
