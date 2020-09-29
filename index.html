@@ -48,7 +48,7 @@
                 src="./Assets/images/profile/circular-profile-pic.png"
               />
               <ol>
-                <li><a href="#main">ABOUT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#guides">GUIDES</a></li>
               </ol>
@@ -56,7 +56,7 @@
           </div>
         </div>
         <!-- MAIN COLUMN -->
-        <div class="col">
+        <div id="about" class="col">
           <div class="container-fluid px-0">
             <!-- about page -->
             <div class="row no-gutters about-page">
@@ -128,66 +128,83 @@
               </div>
             </div>
             <!-- portfolio section -->
-            <div class="row no-gutters">
-              <div id="portfolio">
-                <div class="row align-items-center project1">
-                  <div class="col">
-                    <h1>Facial Recognition Application</h1>
-                    <p class="project1text">
-                      A code-along tutorial creating a web application from
-                      scratch. You can create a user, sign-in, and then submit
-                      photo url’s for the AI to idenitify faces. For now, it
-                      only does one face at a time. Try it out here! Languages
-                      and Frameworks: HTML, CSS, Javascript, ReactJs, NodeJs,
-                      and express.
-                    </p>
+            <div id="portfolio" class="row no-gutters">
+              <div class="row align-items-center project1">
+                <div class="col">
+                  <h1>Facial Recognition Application</h1>
+                  <p class="project1text">
+                    A code-along tutorial creating a web application from
+                    scratch. You can create a user, sign-in, and then submit
+                    photo url’s for the AI to idenitify faces. For now, it only
+                    does one face at a time. Try it out
+                    <a
+                      href="https://facerecognition23.herokuapp.com/"
+                      target="_blank"
+                      >here</a
+                    >! Languages and Frameworks: HTML, CSS, Javascript, ReactJs,
+                    NodeJs, and express.
+                  </p>
+
+                  <a
+                    href="https://facerecognition23.herokuapp.com/"
+                    target="_blank"
+                  >
                     <img
                       src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png"
                       alt="photo of application"
                       class="img-fluid mx-auto d-block face-app-img"
                     />
-                  </div>
+                  </a>
                 </div>
-                <div
-                  class="row align-items-center justify-content-around project2"
-                >
-                  <div class="col-xs-12 col-md-6 projecttext2">
-                    <h1>ft_Printf</h1>
-                    <p>
-                      This project is my recreation of the Printf command with
-                      custom flags. I grew a lot as a programmer during this
-                      project, working with various data structures and
-                      programming concepts to bring the command to life.
-                    </p>
-                  </div>
-                  <div class="col-xs-12 col-md-6 projectimage2">
+              </div>
+              <div
+                class="row align-items-center justify-content-around project2"
+              >
+                <div class="col-xs-12 col-md-6 projecttext2">
+                  <h1>ft_Printf</h1>
+                  <p>
+                    This project is my recreation of the Printf command with
+                    custom flags. I grew a lot as a programmer during this
+                    project, working with various data structures and
+                    programming concepts to bring the command to life.
+                  </p>
+                </div>
+                <div class="col-xs-12 col-md-6 projectimage2">
+                  <a
+                    href="https://github.com/micriver/ft_printf"
+                    target="_blank"
+                  >
                     <img
                       id="ft_printf"
                       src="./Assets/Portfolio-project-screenshots/ft_printf.png"
                       alt="application screenshot"
                       class="img-fluid mx-auto d-block"
-                    />
-                  </div>
+                  /></a>
                 </div>
-                <div
-                  class="row align-items-center justify-content-around project3"
-                >
-                  <div class="col-md-6 projectimage3 order-2 order-md-1">
+              </div>
+              <div
+                class="row align-items-center justify-content-around project3"
+              >
+                <div class="col-md-6 projectimage3 order-2 order-md-1">
+                  <a
+                    href="https://github.com/micriver/libft-2.0"
+                    target="_blank"
+                  >
                     <img
                       src="./Assets/Portfolio-project-screenshots/libft.2.0.png"
                       alt="application screenshot"
                       class="img-fluid mx-auto d-block"
                     />
-                  </div>
-                  <div class="col-md-6 projecttext3 order-1 order-md-2">
-                    <h1>Libft 2.0</h1>
-                    <p>
-                      This project is my version of C programming language
-                      standard library functions. This is an introductory
-                      project for students at 42 Silicon Valley, where we learn
-                      the fundamentals of C and programming in general.
-                    </p>
-                  </div>
+                  </a>
+                </div>
+                <div class="col-md-6 projecttext3 order-1 order-md-2">
+                  <h1>Libft 2.0</h1>
+                  <p>
+                    This project is my version of C programming language
+                    standard library functions. This is an introductory project
+                    for students at 42 Silicon Valley, where we learn the
+                    fundamentals of C and programming in general.
+                  </p>
                 </div>
               </div>
             </div>

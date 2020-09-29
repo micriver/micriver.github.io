@@ -3,11 +3,12 @@ resources:
 
 reorder columns when changing screen size: https://stackoverflow.com/questions/52324561/bootstrap-4-how-to-change-the-order-of-a-columns-when-the-screen-size-changes
 
+new color pallete:
+https://www.schemecolor.com/gunmetal-grey-shades.php
+
 */
 
 body {
-  /* font-family: 'Roboto', sans-serif; */
-  /* background-color: #2f00ff; */
   margin: 0;
   padding: 0;
   height: 100%;
@@ -15,7 +16,6 @@ body {
 }
 
 #sticky-sidebar {
-  /* border: 2px red solid; */
   background: #d3d3d3;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -68,11 +68,6 @@ ol {
   line-height: 0.9;
 }
 
-.hero-photo {
-  /* width: 90vw; */
-  /* width: 100%; */
-}
-
 .contact {
   color: #c7c7c7;
   text-transform: uppercase;
@@ -109,17 +104,8 @@ ol {
 }
 
 .about-page {
-  /* padding: 20% 10% 90px 8%; */
-  /* height: 100vh; */
-}
-
-/* #main {
   padding: 20% 10% 90px 8%;
   height: 100vh;
-} */
-
-#hero-name {
-  padding: 100px;
 }
 
 /* SOCIAL ICONS */
@@ -143,6 +129,7 @@ ol {
 a:link {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  margin: 0;
 }
 
 a:visited {
@@ -167,10 +154,10 @@ a:active {
 }
 
 .face-app-img {
-  margin-top: 50px;
+  margin-top: 50px 0px 0px 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  width: 700px;
+  width: 70%;
 }
 
 .project1text {
@@ -197,12 +184,6 @@ a:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* .project2::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
 /* project 3 */
 .project3 {
   margin-top: 100px;
@@ -219,12 +200,6 @@ a:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
-
-/* /* .project3::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
 
 #guides {
   height: 100vh;
@@ -299,10 +274,10 @@ a:active {
     margin: 0;
   }
 
-  #main {
-    /* height: 100vh; */
+  .about-page {
+    padding: 0;
+    height: 100%;
   }
-
   .hero-name {
     font-size: 55px;
     padding: 30px 30px 5px 30px;
@@ -347,14 +322,14 @@ a:active {
 
   /* Portfolio-mobile */
   #portfolio {
-    /* padding-top: 50px; */
+    padding-top: 50px;
   }
 
   .face-app-img {
     margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    max-width: 100%;
+    width: 100%;
   }
 
   #guides {
