@@ -202,3 +202,105 @@ a:active {
 .hire-me-button {
   margin-top: 50px;
 }
+
+.guide-text {
+  margin-right: 10%;
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  .sticky-sidebar {
+    padding-top: 100px;
+  }
+  #main {
+    margin-top: 80px;
+    white-space: normal;
+    height: 100vh;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	html, body {
+		width: auto;
+		margin: 0;
+	}
+	#bio_row {
+		width: 350px;
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+	hr {
+		width: 200px;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 1.3em;
+	}
+	#icons_row {
+		text-align: left;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 200px;
+		margin-bottom: 20px;
+	}
+} */
+
+/* Galaxy S6, S7, S7 Edge */
+@media only screen
+	and (min-device-width: 320px)
+	/* and (min-device-width: 340px) */
+	and (max-device-width: 640px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+	CSS Rules Here
+	html, body {
+		width: auto;
+		margin: 0;
+  }
+
+  #main {
+    white-space: normal;
+    height: 100vh;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  #hero-name .text-left {
+    font-size: 65px;
+  }
+  #hero-name #comment {
+    display: none;
+    /* font-size: 55px;
+  font-style: black;
+  font-weight: 700; */
+  }
+}
+
+@media only screen
+
+  and (min-device-width: 320px)
+
+  and (max-device-width: 568px)
+
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* CSS Rules Here */
+
+}
