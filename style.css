@@ -18,7 +18,7 @@ body {
   padding-top: 275px;
 }
 
-h1 {
+#portfolio h1 {
   font-family: Roboto;
   font-style: italic;
   font-weight: 700;
@@ -142,16 +142,63 @@ a:active {
   color: rgba(255, 255, 255, 0.88);
 }
 
-#portfolio img {
+#facial_recognition_app {
   margin-top: 50px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
   max-width: 70%;
 }
 
-#portfolio p {
+.project1text {
   font-family: Roboto;
   font-weight: 100;
   font-size: 1.2rem;
   font-style: thin;
+}
+
+/* project 2 */
+.project2 {
+  margin-top: 100px;
+}
+
+.projectimage2 img {
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* project 3 */
+.project3 {
+  margin-top: 100px;
+}
+
+.projectimage3 img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.project3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#guides {
+  height: 100vh;
+}
+
+#guides h1 {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.hire-me-button {
+  margin-top: 50px;
 }

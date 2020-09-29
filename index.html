@@ -58,73 +58,143 @@
         <!-- MAIN COLUMN -->
         <div class="col">
           <div class="container-fluid px-0">
-            <!-- <div class="row-fluid">
-              <h1 class="test">test row</h1>
-            </div> -->
-            <div id="main">
-              <div id="hero-name">
-                <p class="text-left">
-                  <span id="comment">//&nbsp;</span>Michael Rivera
-                </p>
-              </div>
-              <div class="contact">
-                <p class="text-left">
-                  <span id="email">mrivera.dir@gmail.com</span> | San francisco,
-                  ca | (781) 608-7464
-                </p>
-              </div>
-              <!-- bio -->
-              <div class="bio">
-                <p>
-                  I’m a Blockchain Web developer. I build Ethereum Smart
-                  Contracts and simple web applications.
-                </p>
-                <p>
-                  I'm interested in cryptocurrency, industrial-blockchain
-                  applications and decentralized internet infrastructures.
-                  <br />I’m also a former food photographer, filmmaker and a
-                  hobbyist graphic designer.
-                </p>
-              </div>
-              <!-- social icons -->
-              <div class="social-icons">
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/michael-rivera-a42391112/"
-                  ><i
+            <div class="row no-gutters">
+              <div id="main">
+                <div id="hero-name">
+                  <p class="text-left">
+                    <span id="comment">//&nbsp;</span>Michael Rivera
+                  </p>
+                </div>
+                <div class="contact">
+                  <p class="text-left">
+                    <span id="email">mrivera.dir@gmail.com</span> | San
+                    francisco, ca | (781) 608-7464
+                  </p>
+                </div>
+                <!-- bio -->
+                <div class="bio">
+                  <p>
+                    I’m a Blockchain Web developer. I build Ethereum Smart
+                    Contracts and simple web applications.
+                  </p>
+                  <p>
+                    I'm interested in cryptocurrency, industrial-blockchain
+                    applications and decentralized internet infrastructures.
+                    <br />I’m also a former food photographer, filmmaker and a
+                    hobbyist graphic designer.
+                  </p>
+                </div>
+                <!-- social icons -->
+                <div class="social-icons">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/michael-rivera-a42391112/"
+                    ><i
+                      style="color: black"
+                      class="fa fa-linkedin fa-4x linkedin_icon"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <a target="_blank" href="http://github.com/micriver"
+                    ><i
+                      style="color: black"
+                      class="fa fa-github fa-4x github_icon"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <i
                     style="color: black"
-                    class="fa fa-linkedin fa-4x linkedin_icon"
+                    class="fa fa-twitter fa-4x twitter_icon"
                     aria-hidden="true"
-                  ></i
-                ></a>
-                <a target="_blank" href="http://github.com/micriver"
-                  ><i
-                    style="color: black"
-                    class="fa fa-github fa-4x github_icon"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-                <i
-                  style="color: black"
-                  class="fa fa-twitter fa-4x twitter_icon"
-                  aria-hidden="true"
-                ></i>
+                  ></i>
+                </div>
               </div>
             </div>
             <!-- portfolio section -->
-            <div class="jumbotron jumbotron-fluid" id="portfolio">
+            <div class="row no-gutters">
+              <div id="portfolio">
                 <h1>Facial Recognition Application</h1>
-              <p>
-                A code-along tutorial creating a web application from scratch.
-                You can create a user, sign-in, and then submit photo url’s for
-                the AI to idenitify faces. <br>For now, it only does one face at a
-                time. Try it out here! Languages and Frameworks: HTML, CSS,
-                Javascript, ReactJs, NodeJs, and express.
-              </p>
-              <img src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png" alt="photo of application" class="img-fluid mx-auto d-block">
+                <p class="project1text">
+                  A code-along tutorial creating a web application from scratch.
+                  You can create a user, sign-in, and then submit photo url’s
+                  for the AI to idenitify faces. For now, it only does one face
+                  at a time. Try it out here! Languages and Frameworks: HTML,
+                  CSS, Javascript, ReactJs, NodeJs, and express.
+                </p>
+                <img
+                  src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png"
+                  alt="photo of application"
+                  class="img-fluid mx-auto d-block"
+                  id="facial_recognition_app"
+                />
+                <div
+                  class="row align-items-center justify-content-around project2"
+                >
+                  <div class="col-6 projecttext2">
+                    <h1>ft_Printf</h1>
+                    <p>
+                      This project is my recreation of the Printf command with
+                      custom flags. I grew a lot as a programmer during this
+                      project, working with various data structures and
+                      programming concepts to bring the command to life.
+                    </p>
+                  </div>
+                  <div class="col-6 projectimage2">
+                    <img
+                      id="ft_printf"
+                      src="./Assets/Portfolio-project-screenshots/ft_printf.png"
+                      alt="application screenshot"
+                      style="float: right"
+                      class="img-fluid mx-auto d-block"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="row align-items-center justify-content-around project3"
+                >
+                  <div class="col-6 projectimage3">
+                    <img
+                      src="./Assets/Portfolio-project-screenshots/libft.2.0.png"
+                      alt="application screenshot"
+                      class="img-fluid mx-auto d-block"
+                      style="float: left"
+                    />
+                  </div>
+                  <div class="col-6 projecttext3">
+                    <h1>Libft 2.0</h1>
+                    <p>
+                      This project is my version of C programming language
+                      standard library functions. This is an introductory
+                      project for students at 42 Silicon Valley, where we learn
+                      the fundamentals of C and programming in general.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="project2">
-
+            <!-- guides section -->
+            <div id="guides" class="row">
+              <div class="col-7 offset-md-1 align-self-center">
+                <h1>Guides</h1>
+                <p class="guide-info text-left">
+                  This is a work in progress...
+                </p>
+                <p>
+                  In the near future, I plan on writing guides for beginner
+                  developers like me, covering various topics and services in the
+                  blockchain and fintech ecosystem
+                </p>
+                <p>
+                  I’m hoping to lay out the thought process behind my code. This
+                  will be my way of giving back to the community 😊
+                </p>
+                <div class="hire-me-button text-center">
+                  <button type="button" class="btn btn-primary">
+                    Hire me! 👨🏻
+                  </button>
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
