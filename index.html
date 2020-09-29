@@ -58,12 +58,12 @@
         <!-- MAIN COLUMN -->
         <div class="col">
           <div class="container-fluid px-0">
-            <!-- contact page -->
-            <div class="row no-gutters">
-              <div id="main">
-                <div id="hero-name">
+            <!-- about page -->
+            <div class="row no-gutters about-page">
+              <div class="col" id="main">
+                <div class="hero-name align-self-center">
                   <p class="text-left">
-                    <span id="comment">//&nbsp;</span>Michael Rivera
+                    <span class="comment">//&nbsp;</span>Michael Rivera
                   </p>
                 </div>
                 <div>
@@ -72,10 +72,21 @@
                     Francisco, ca | (781) 608-7464
                   </p>
                   <!-- mobile contact html -->
-                  <p class="text-left contact-mobile">
-                    <span id="email-mobile">mrivera.dir@gmail.com</span> <br />
-                    San francisco, ca | (781) 608-7464
+                  <p class="contact-mobile">
+                    <span class="email-mobile">mrivera.dir@gmail.com</span>
+                    <br />
+                    <span class="contact-mobile"
+                      >San francisco, ca | (781) 608-7464</span
+                    >
                   </p>
+                </div>
+                <!-- hero photo for mobile display -->
+                <div class="hero-photo d-block d-sm-none">
+                  <img
+                    src="./Assets/images/profile/IMG_0180-1.jpg"
+                    class="img-fluid mx-0 mt-3 d-block"
+                    alt=""
+                  />
                 </div>
                 <!-- bio -->
                 <div class="bio">
@@ -154,7 +165,6 @@
                       id="ft_printf"
                       src="./Assets/Portfolio-project-screenshots/ft_printf.png"
                       alt="application screenshot"
-                      style="float: right"
                       class="img-fluid mx-auto d-block"
                     />
                   </div>
@@ -162,15 +172,14 @@
                 <div
                   class="row align-items-center justify-content-around project3"
                 >
-                  <div class="col-6 projectimage3">
+                  <div class="col-md-6 projectimage3 order-2 order-md-1">
                     <img
                       src="./Assets/Portfolio-project-screenshots/libft.2.0.png"
                       alt="application screenshot"
                       class="img-fluid mx-auto d-block"
-                      style="float: left"
                     />
                   </div>
-                  <div class="col-6 projecttext3">
+                  <div class="col-md-6 projecttext3 order-1 order-md-2">
                     <h1>Libft 2.0</h1>
                     <p>
                       This project is my version of C programming language
