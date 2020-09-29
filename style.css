@@ -69,13 +69,17 @@ ol {
   font-weight: 900;
 }
 
-#email {
+.contact .email {
   color: #0075ff;
   font-family: Roboto;
   font-weight: 900;
   text-transform: uppercase;
   font-style: bold;
   letter-spacing: 0.045em;
+}
+
+.contact-mobile {
+  display: none;
 }
 
 .bio {
@@ -135,14 +139,14 @@ a:active {
   text-decoration: none;
 }
 
+/* Portfolio desktop */
 #portfolio {
-  height: 200vh;
   background-color: #0075ff;
   padding: 5% 10% 90px 8%;
   color: rgba(255, 255, 255, 0.88);
 }
 
-#facial_recognition_app {
+.face-app-img {
   margin-top: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -208,10 +212,7 @@ a:active {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .sticky-sidebar {
     padding-top: 100px;
   }
@@ -223,11 +224,7 @@ a:active {
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 }
 
 /* Portrait and Landscape */
@@ -261,21 +258,38 @@ a:active {
 } */
 
 /* Galaxy S6, S7, S7 Edge */
-@media only screen
-	and (min-device-width: 320px)
-	/* and (min-device-width: 340px) */
-	and (max-device-width: 640px)
-	and (-webkit-min-device-pixel-ratio: 2) {
-
-	CSS Rules Here
-	html, body {
-		width: auto;
-		margin: 0;
+@media only screen and (min-device-width: 360px) /* and (min-device-width: 340px) */ and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  CSS Rules Here html,
+  body {
+    width: auto;
+    margin: 0;
   }
 
   #main {
     white-space: normal;
     height: 100vh;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .contact-mobile {
+    display: inline;
+    color: #c7c7c7;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 900;
+  }
+
+  #email-mobile {
+    display: inline;
+    color: #0075ff;
+    font-family: Roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: bold;
+    letter-spacing: 0.045em;
   }
 
   .social-icons {
@@ -287,20 +301,25 @@ a:active {
   }
   #hero-name #comment {
     display: none;
-    /* font-size: 55px;
-  font-style: black;
-  font-weight: 700; */
+  }
+
+  /* Portfolio-mobile */
+  #portfolio {
+    padding-top: 50px;
+  }
+
+  .face-app-img {
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  .project2 {
+    margin-top: 40px;
   }
 }
 
-@media only screen
-
-  and (min-device-width: 320px)
-
-  and (max-device-width: 568px)
-
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   /* CSS Rules Here */
-
 }

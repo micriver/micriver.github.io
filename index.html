@@ -58,6 +58,7 @@
         <!-- MAIN COLUMN -->
         <div class="col">
           <div class="container-fluid px-0">
+            <!-- contact page -->
             <div class="row no-gutters">
               <div id="main">
                 <div id="hero-name">
@@ -65,10 +66,15 @@
                     <span id="comment">//&nbsp;</span>Michael Rivera
                   </p>
                 </div>
-                <div class="contact">
-                  <p class="text-left">
-                    <span id="email">mrivera.dir@gmail.com</span> | San
-                    francisco, ca | (781) 608-7464
+                <div>
+                  <p class="text-left contact">
+                    <span class="email">mrivera.dir@gmail.com</span> | San
+                    Francisco, ca | (781) 608-7464
+                  </p>
+                  <!-- mobile contact html -->
+                  <p class="text-left contact-mobile">
+                    <span id="email-mobile">mrivera.dir@gmail.com</span> <br />
+                    San francisco, ca | (781) 608-7464
                   </p>
                 </div>
                 <!-- bio -->
@@ -113,24 +119,28 @@
             <!-- portfolio section -->
             <div class="row no-gutters">
               <div id="portfolio">
-                <h1>Facial Recognition Application</h1>
-                <p class="project1text">
-                  A code-along tutorial creating a web application from scratch.
-                  You can create a user, sign-in, and then submit photo url’s
-                  for the AI to idenitify faces. For now, it only does one face
-                  at a time. Try it out here! Languages and Frameworks: HTML,
-                  CSS, Javascript, ReactJs, NodeJs, and express.
-                </p>
-                <img
-                  src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png"
-                  alt="photo of application"
-                  class="img-fluid mx-auto d-block"
-                  id="facial_recognition_app"
-                />
+                <div class="row align-items-center project1">
+                  <div class="col">
+                    <h1>Facial Recognition Application</h1>
+                    <p class="project1text">
+                      A code-along tutorial creating a web application from
+                      scratch. You can create a user, sign-in, and then submit
+                      photo url’s for the AI to idenitify faces. For now, it
+                      only does one face at a time. Try it out here! Languages
+                      and Frameworks: HTML, CSS, Javascript, ReactJs, NodeJs,
+                      and express.
+                    </p>
+                    <img
+                      src="./Assets/Portfolio-project-screenshots/facial_recognition_app.png"
+                      alt="photo of application"
+                      class="img-fluid mx-auto d-block face-app-img"
+                    />
+                  </div>
+                </div>
                 <div
                   class="row align-items-center justify-content-around project2"
                 >
-                  <div class="col-6 projecttext2">
+                  <div class="col-xs-12 col-md-6 projecttext2">
                     <h1>ft_Printf</h1>
                     <p>
                       This project is my recreation of the Printf command with
@@ -139,7 +149,7 @@
                       programming concepts to bring the command to life.
                     </p>
                   </div>
-                  <div class="col-6 projectimage2">
+                  <div class="col-xs-12 col-md-6 projectimage2">
                     <img
                       id="ft_printf"
                       src="./Assets/Portfolio-project-screenshots/ft_printf.png"
@@ -174,15 +184,15 @@
             </div>
             <!-- guides section -->
             <div id="guides" class="row no-gutters">
-              <div class="col offset-1 align-self-center guide-text">
+              <div class="offset-1 align-self-center guide-text">
                 <h1>Guides</h1>
                 <p class="guide-info text-left">
                   This is a work in progress...
                 </p>
                 <p>
                   In the near future, I plan on writing guides for beginner
-                  developers like me, covering various topics and services in the
-                  blockchain and fintech ecosystem
+                  developers like me, covering various topics and services in
+                  the blockchain and fintech ecosystem
                 </p>
                 <p>
                   I’m hoping to lay out the thought process behind my code. This
@@ -193,7 +203,6 @@
                     Hire me! 👨🏻
                   </button>
                 </div>
-                
               </div>
             </div>
           </div>
