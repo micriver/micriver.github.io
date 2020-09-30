@@ -9,14 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="./resources/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!-- for github, you need the relative path and the "type" attribute 
-	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
-	-->
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -24,6 +16,9 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!-- for github, you need the relative path and the "type" attribute 
+	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
+	-->
     <!-- my stylesheet -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
@@ -55,11 +50,15 @@
         <!-- MAIN COLUMN -->
         <div id="about" class="col">
           <!-- simple fixed nav bar only on mobile and ipad -->
-          <nav class="navbar navbar-expand navbar-dark bg-primary d-block d-lg-none fixed-top">
+          <nav
+            class="navbar navbar-expand navbar-dark bg-primary d-block d-lg-none fixed-top"
+          >
             <div id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto nav-fill w-100">
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#about"
+                    >About <span class="sr-only">(current)</span></a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -119,24 +118,29 @@
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/michael-rivera-a42391112/"
-                    ><i
-                      style="color: black"
-                      class="fa fa-linkedin fa-4x linkedin_icon"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <a target="_blank" href="http://github.com/micriver"
-                    ><i
-                      style="color: black"
-                      class="fa fa-github fa-4x github_icon"
-                      aria-hidden="true"
-                    ></i
-                  ></a>
-                  <i
-                    style="color: black"
-                    class="fa fa-twitter fa-4x twitter_icon"
-                    aria-hidden="true"
-                  ></i>
+                  >
+                    <img
+                      src="./Assets/images/icons/linkedin.png"
+                      width="58px"
+                      alt=""
+                      class="linkedin_icon"
+                    />
+                    ></a
+                  >
+                  <a target="_blank" href="http://github.com/micriver">
+                    <img
+                      src="./Assets/images/icons/github.png"
+                      width="62px"
+                      alt=""
+                      class="github_icon"
+                    />
+                  </a>
+                  <img
+                    src="./Assets/images/icons/twitter.png"
+                    width="71px"
+                    alt=""
+                    class="twitter_icon"
+                  />
                 </div>
               </div>
             </div>
