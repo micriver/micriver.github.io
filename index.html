@@ -14,9 +14,6 @@
       rel="stylesheet"
       href="./resources/font-awesome-4.7.0/css/font-awesome.min.css"
     />
-    <!-- friconix -->
-    <script defer src="https://friconix.com/cdn/friconix.js"></script>
-    <!-- my style sheet -->
     <!-- for github, you need the relative path and the "type" attribute 
 	https://stackoverflow.com/questions/52003005/css-not-working-on-github-pages
 	-->
@@ -57,6 +54,22 @@
         </div>
         <!-- MAIN COLUMN -->
         <div id="about" class="col">
+          <!-- simple fixed nav bar only on mobile and ipad -->
+          <nav class="navbar navbar-expand navbar-dark bg-primary d-block d-lg-none fixed-top">
+            <div id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#guides">Guides</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
           <div class="container-fluid px-0">
             <!-- about page -->
             <div class="row no-gutters about-page">
