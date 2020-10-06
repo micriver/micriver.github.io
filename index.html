@@ -21,6 +21,7 @@
 	-->
     <!-- my stylesheet -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./mobile-style.css" />
   </head>
 
   <body>
@@ -40,9 +41,9 @@
                 src="./Assets/images/profile/circular-profile-pic.png"
               />
               <ol>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#guides">GUIDES</a></li>
+                <li><a class="hvr-fade" href="#about">ABOUT</a></li>
+                <li><a class="hvr-fade" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="hvr-fade" href="#guides">GUIDES</a></li>
               </ol>
             </div>
           </div>
@@ -114,25 +115,34 @@
                   </p>
                 </div>
                 <!-- social icons -->
+                <!-- <a href="#" class="hvr-icon-spin">
+                  Icon Spin
+                  <img src="myicon.svg" class="hvr-icon" />
+                </a> -->
                 <div class="social-icons">
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/michael-rivera-a42391112/"
+                    class="hvr-icon-grow"
                   >
                     <img
                       src="./Assets/images/icons/linkedin.png"
-                      width="58px"
+                      width="59px"
                       alt=""
-                      class="linkedin_icon"
+                      class="hvr-icon linkedin_icon"
                     />
                     ></a
                   >
-                  <a target="_blank" href="http://github.com/micriver">
+                  <a
+                    target="_blank"
+                    href="http://github.com/micriver"
+                    class="hvr-icon-grow"
+                  >
                     <img
                       src="./Assets/images/icons/github.png"
                       width="62px"
                       alt=""
-                      class="github_icon"
+                      class="hvr-icon github_icon"
                     />
                   </a>
                   <img
@@ -157,8 +167,10 @@
                     <a
                       href="https://facerecognition23.herokuapp.com/"
                       target="_blank"
-                      >here</a
-                    >! Languages and Frameworks: HTML, CSS, Javascript, ReactJs,
+                      class="ani-link"
+                      >here.</a
+                    >
+                    Languages and Frameworks: HTML, CSS, Javascript, ReactJs,
                     NodeJs, and express.
                   </p>
 
@@ -217,10 +229,16 @@
                 <div class="col-md-6 projecttext3 order-1 order-md-2">
                   <h1>Libft 2.0</h1>
                   <p>
-                    This project is my version of C programming language
+                    This project is my version of the C programming language
                     standard library functions. This is an introductory project
                     for students at 42 Silicon Valley, where we learn the
-                    fundamentals of C and programming in general.
+                    fundamentals of C and programming in general. You can find
+                    all of the functions I recreated from scratch,
+                    <a
+                      href="https://github.com/micriver/libft-2.0"
+                      class="ani-link"
+                      >here.</a
+                    >
                   </p>
                 </div>
               </div>
