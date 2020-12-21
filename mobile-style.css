@@ -1,1 +1,65 @@
-/* Galaxy S6, S7, S7 Edge */ @media only screen and (min-device-width: 360px) /* and (min-device-width: 340px) */ and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) { CSS Rules Here html, body { padding: 0; margin: 0; } .navbar { padding: 5px; } .hero-name { padding-top: 65px; font-size: 3.8rem; font-weight: 900; color: black; } .hero-name .comment { display: none; } .contact-mobile { display: inline; color: #c7c7c7; font-family: Roboto; font-weight: 900; text-transform: uppercase; font-style: bold; letter-spacing: 0.045em; } .email-mobile { color: #0075ff; } .bio { padding-top: 20px; margin-top: 0; } .social-icons { margin-top: 0px; margin-bottom: 30px; } /* Portfolio-mobile */ .portfolio-row { color: rgba(255, 255, 255, 0.75); padding: 20px 0px; background-color: #0075ff; } .first-row { padding-top: 60px; } .last-row { padding-bottom: 80px; } } @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* CSS Rules Here */ }
+/* Galaxy S6, S7, S7 Edge */
+@media only screen and (min-device-width: 320px) /* and (min-device-width: 340px) */ and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  CSS Rules Here html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 5px;
+  }
+
+  .hero-name {
+    padding-top: 65px;
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: black;
+  }
+
+  .hero-name .comment {
+    display: none;
+  }
+
+  .contact-mobile {
+    display: inline;
+    color: #c7c7c7;
+    font-family: Roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: bold;
+    letter-spacing: 0.045em;
+  }
+
+  .email-mobile {
+    color: #0075ff;
+  }
+
+  .bio {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+  .social-icons {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  /* Portfolio-mobile */
+  .portfolio-row {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 0px;
+    background-color: #0075ff;
+  }
+
+  .first-row {
+    padding-top: 60px;
+  }
+  .last-row {
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* CSS Rules Here */
+}
