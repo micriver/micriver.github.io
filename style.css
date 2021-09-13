@@ -190,6 +190,10 @@ a:active {
   border-radius: 4px;
 }
 
+.blog-link {
+  color: black;
+}
+
 /* Portfolio desktop */
 .portfolio-row h1 {
   font-family: Roboto;
